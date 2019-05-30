@@ -1,20 +1,19 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var storySchema = new Schema({
-  question1: String,
+var blogSchema = new Schema({
+  post: String,
   
 }, {
   timestamps: true,
 });
 
+
+
 var userSchema = new mongoose.Schema({
     name: String,
-    email: String,
     googleId: String,
-    story: [storySchema],
-    // story: [{type: Schema.Types.ObjectId, ref: 'Story'}],
-    enResult: [],
+    blogs: [blogSchema],
   }, {
     timestamps: true
   });
