@@ -18,6 +18,12 @@
                   <form action="/users/blog/<%= blog._id %>?_method=DELETE" method="POST" class="secondary-content">
                     <button type="submit" class="btn-small red-text">X</button>
                   </form>
+                  <% } %>              
+                  <% if (u._id.equals(user && user._id)) { %>
+                  <form action="/users/blog/<%= blog._id %>" method="POST" class="secondary-content">
+                    <input type="text" name="post" class="white-text">
+                    <button type="submit" class="btn-small red-text">Edit</button>
+                  </form>
                 <% } %>              
               </li>
             <% }) %>
@@ -29,14 +35,8 @@
                 <button type="submit" class="btn white-text">Blog Post</button>
               </form>
             </div>
-            <div>
-              <form action="/users/delete">
-                <button type="submit" class="btn white-text">Delete Post</button>              
-              </form>
-            </div>
           <% } %>         
         </td>
-        <td><a href="/blog<%= u._id %>">View Blog</a></td>
       </tr>
     <% }); %>
     </tbody>

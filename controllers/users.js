@@ -5,6 +5,7 @@ module.exports = {
     index,
     addBlog,
     deleteBlog,
+    editBlog,
     
 };
 
@@ -19,12 +20,7 @@ function addBlog(req, res, next) {
         res.redirect('/users')
     })
     
-    // req.user.blogs.push(req.body);
-    // console.log(req.user)
-    // console.log('was hit')
-    // req.user.save(function(err) {
-        // res.redirect('/users');
-        // });
+
     };
     
     function index(req, res, next) {
@@ -54,4 +50,20 @@ function addBlog(req, res, next) {
             });
         });
     };
+
+
+    function editBlog(req, res, next) {
+        console.log('this point');
+        User.findOne({'blogs._id' : req.params.id}, function(err, user) {
+            console.log(req.params.id)
+            const data = user.blogs.id(req.params.id)
+            data.set(req.body)
+            user.save(function(err) {
+                res.redirect('/users');
+            });
+        });
+    };
+
+
+    
             
