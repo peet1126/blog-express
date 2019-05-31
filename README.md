@@ -1,8 +1,8 @@
 # Bloggers 
 
 ## Screenshots 
-![home page](./public/images/Screen Shot 2019-05-31 at 1.27.05 PM.png) 
-![user page](./public/images/Screen Shot 2019-05-31 at 11.00.56 AM.png) 
+![home page](https://i.imgur.com/ryW1UKO.png) 
+![user page](https://i.imgur.com/I3t3C6B.png) 
 
 ## Technologies Used 
 ### JavaScript, HTML, CSS, Express 
