@@ -36,20 +36,17 @@
                 <% if (u._id.equals(user && user._id)) { %>
                   <div class="row">
                     <div class="col s3"></div>
-                    <form action="/users/blog/<%= blog._id %>?_method=DELETE" method="POST" class="secondary-content">
-                      <button type="submit" class="btn-small red-text">X</button>
-                    </form>
+                      <form action="/users/blog/<%= blog._id %>?_method=DELETE" method="POST" class="secondary-content">
+                        <button type="submit" class="btn-small red-text">X</button>
+                      </form>
+                        <form action="/users/blog/<%= blog._id %>" method="POST" class="secondary-content">
+                          <input type="text" name="post" class="white-text">
+                          <button type="submit" class="btn-small red-text">Edit</button>
+                        </form> 
+                    </div>                  
                   </div>
-                  <div class="col s3">  
-                    
-                      <form action="/users/blog/<%= blog._id %>" method="POST" class="secondary-content">
-                        <input type="text" name="post" class="white-text">
-                        <button type="submit" class="btn-small red-text">Edit</button>
-                      </form> 
-                    
-                  </div>
+                </div>
                 <% } %> 
-              </div>
               <% 
               u.comment.forEach(function(comment) { 
                 console.log(comment.blogId.equals(blog._id))
@@ -61,12 +58,9 @@
                 <button type="submit" class="btn-small red-text">Comment</button>                
               </form>                
               </div>                             
-              </div>
             </div>
           <% }) %>
-        </div>
-      </div>
-    </div>
+
               
 <% }) %>    
 
