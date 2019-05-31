@@ -12,9 +12,10 @@ module.exports = {
 
 function comment(req, res, next) {
     console.log('now');
+    let blog = req.params.id
     var friend = req.user
     console.log(friend, req.body);
-    friend.comment.push(req.body);
+    friend.comment.push({blogId : req.params.id, ...req.body});
     friend.save(() => {
         res.redirect('/users')
     })
@@ -42,7 +43,9 @@ function addBlog(req, res, next) {
             res.render('users/index', { users, 
                 name: req.query.name, 
                 sortKey,
-                user: req.user
+                user: req.user,
+                
+                
             });
         });
     }

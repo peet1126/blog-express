@@ -11,6 +11,7 @@ var blogSchema = new Schema({
 
 var commentSchema = new mongoose.Schema({
   post: String,
+  blogId: mongoose.ObjectId
   
 }, {
   timestamps: true
