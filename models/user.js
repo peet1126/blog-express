@@ -9,11 +9,19 @@ var blogSchema = new Schema({
 });
 
 
+var commentSchema = new mongoose.Schema({
+  post: String,
+  
+}, {
+  timestamps: true
+});
+
 
 var userSchema = new mongoose.Schema({
     name: String,
     googleId: String,
     blogs: [blogSchema],
+    comment: [commentSchema],
   }, {
     timestamps: true
   });

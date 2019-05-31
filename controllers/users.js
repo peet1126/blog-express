@@ -6,10 +6,19 @@ module.exports = {
     addBlog,
     deleteBlog,
     editBlog,
+    comment,
     
 };
 
-
+function comment(req, res, next) {
+    console.log('now');
+    var friend = req.user
+    console.log(friend, req.body);
+    friend.comment.push(req.body);
+    friend.save(() => {
+        res.redirect('/users')
+    })
+}
 
 
 function addBlog(req, res, next) {
