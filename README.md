@@ -5,7 +5,7 @@
 ![user page](https://i.imgur.com/I3t3C6B.png) 
 
 ## Technologies Used 
-### JavaScript, HTML, CSS, Express 
+### JavaScript, HTML, CSS, Express, Mongodb, Materialize, Node
 
 ## Getting Started 
 ### [Link to Blogger app](https://afternoon-brook-18298.herokuapp.com/users#) 
