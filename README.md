@@ -1,6 +1,8 @@
 # Bloggers 
 
-## Screenshots
+## Screenshots 
+### ![home page](/Users/emilyrobertson/code/blog-express/blog-express/public/images/Screen Shot 2019-05-31 at 1.27.05 PM.png) 
+### ![user page](/Users/emilyrobertson/code/blog-express/blog-express/public/images/Screen Shot 2019-05-31 at 11.00.56 AM.png) 
 
 ## Technologies Used 
 ### JavaScript, HTML, CSS, Express 
