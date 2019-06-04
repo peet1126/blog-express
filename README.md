@@ -5,6 +5,9 @@
 ![home page](https://i.imgur.com/ryW1UKO.png) 
 ![user page](https://i.imgur.com/I3t3C6B.png) 
 
+## Trello
+### [Link to Trello board](https://trello.com/b/TMqRA1fU/blogger) 
+
 ## Technologies Used 
 ### JavaScript, HTML, CSS, Express, Mongodb, Materialize, Node
 
