@@ -1,4 +1,5 @@
 # Bloggers 
+### A web app that allows users to log in and post blogs to a single feed. the users is able to edit and delete blog posts along with comment on any blog post. 
 
 ## Screenshots 
 ![home page](https://i.imgur.com/ryW1UKO.png) 
